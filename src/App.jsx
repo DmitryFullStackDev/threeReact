@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact";
 import Hero from "./Components/Hero";
 import styled from "styled-components";
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <Container>
       <Hero />
+      <Contact/>
     </Container>
   );
 }
