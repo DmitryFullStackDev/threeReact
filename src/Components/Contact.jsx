@@ -73,12 +73,13 @@ const Contact = () => {
   const ref = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
-        "service_y9crk2o",
-        "template_etkcqq5",
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         ref.current,
-        "wxyNEbWYf75HuUxKM"
+          import.meta.env.VITE_EMAILJS_USER_ID
       )
       .then(
         (result) => {
