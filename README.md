@@ -44,7 +44,6 @@ Follow these steps to get the project up and running locally:
 Once the server is running, open your browser at http://localhost:5173 (or the port shown in your terminal).
 
 - 🌀 Drag or click to interact with 3D elements.
-- 🗺️ Use the map view to explore different locations.
 - 📬 Submit the contact form to send a message via EmailJS.
 
 ## 🧪 Tech Stack
