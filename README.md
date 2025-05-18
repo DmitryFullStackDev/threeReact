@@ -1,6 +1,6 @@
 # React 3D Website
 
-A modern web application built with **React**, **Three.js**, **Mapbox**, **EmailJS**, and **Styled Components**, allowing users to interact with 3D objects and explore a map-based interface directly in the browser.
+A modern web application built with **React**, **Three.js**, **EmailJS**, and **Styled Components**, allowing users to interact with 3D objects and explore a map-based interface directly in the browser.
 
 ---
 
