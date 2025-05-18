@@ -53,5 +53,9 @@ Once the server is running, open your browser at http://localhost:5173 (or the p
 - EmailJS – Email integration
 - Styled Components – CSS-in-JS styling
 
+## ✨ Demo
+Experience the app simulation live:
+https://three-react-three.vercel.app/ 🔥
+
 ## 🧩Interface
 ![Capture](img.png)
