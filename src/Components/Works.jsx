@@ -19,16 +19,22 @@ const Section = styled.section`
   font-size: 14px;
   font-weight: 300;
   color: black;
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 40px 20px;
+  }
 `;
 
 const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 
   @media (max-width: 768px) {
-    width: 100%;
     flex-direction: column;
+    width: 100%;
     align-items: center;
   }
 `;
@@ -39,8 +45,8 @@ const LeftPanel = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-    padding: 20px;
     justify-content: center;
+    width: 100%;
   }
 `;
 
@@ -49,6 +55,11 @@ const RightPanel = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-top: 20px;
+  }
 `;
 
 const List = styled.ul`
@@ -56,6 +67,10 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 `;
 
 const revealText = keyframes`
@@ -74,7 +89,7 @@ const ListItem = styled.li`
   transition: color 0.3s ease;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     -webkit-text-stroke: 0;
   }
@@ -93,6 +108,10 @@ const ListItem = styled.li`
 
   &:hover::after {
     animation: ${revealText} 0.5s forwards;
+
+    @media (max-width: 768px) {
+      animation: none;
+    }
   }
 `;
 
@@ -105,7 +124,11 @@ const Works = () => {
           <LeftPanel>
             <List>
               {categories.map((item) => (
-                  <ListItem key={item} text={item} onClick={() => setSelectedWork(item)}>
+                  <ListItem
+                      key={item}
+                      text={item}
+                      onClick={() => setSelectedWork(item)}
+                  >
                     {item}
                   </ListItem>
               ))}

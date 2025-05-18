@@ -5,7 +5,7 @@ import Works from "./Components/Works.jsx";
 import Who from "./Components/Who.jsx";
 
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   background-color: rebeccapurple;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -13,8 +13,16 @@ const Container = styled.div`
   scrollbar-width: none;
   color: white;
   background: url("./img/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 10px;
   }
 `;
 
